@@ -6,6 +6,7 @@ from airflow.operators.python import PythonOperator
 from airflow.sensors.filesystem import FileSensor
 from datetime import datetime, timedelta
 
+# count postcodes = 2309
 
 def get_path_json():
     current_dir = os.path.dirname(os.path.abspath(__file__))

@@ -9,15 +9,7 @@ import logging
 
 
 
-def run_spider_wrapper(**_):
-    """
-    Wrapper that starts the Scrapy spider.
-    Putting the import INSIDE the function
-    keeps DAG-parsing light and lets logs appear.
-    """
-    logging.warning("===> On The Market spider is starting")
-    onthemarket_scraper.Main()
-    logging.warning("===> On The Market spider finished")
+
     
 
 def get_path_csv()-> str:
@@ -33,6 +25,17 @@ def feed_elasticsearch(**_):   # so we use Wrapper for not calling the function 
     ElasticSearch.Handling_ElasticSearch().add_bulk(index, csv_path)
     logging.warning("===> Feeding Elastic Search is Ending")
     
+
+def run_spider_wrapper(**_):
+    """
+    Wrapper that starts the Scrapy spider.
+    Putting the import INSIDE the function
+    keeps DAG-parsing light and lets logs appear.
+    """
+    logging.warning("===> On The Market spider is starting")
+    onthemarket_scraper.Main()
+    logging.warning("===> On The Market spider finished")
+
 
 with DAG('OnTheMarket_PipeLine',
          default_args={

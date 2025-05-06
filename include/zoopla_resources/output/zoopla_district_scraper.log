@@ -431,3 +431,135 @@
 2025-04-26 11:38:23,996 - ERROR - Error fetching listing 69237109: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
 2025-04-26 11:38:24,011 - ERROR - Error fetching listing 69234879: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
 2025-04-26 11:38:24,011 - ERROR - Error fetching listing 69229336: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:38:51,443 - INFO - Loaded 0 processed districts from checkpoint
+2025-04-26 11:38:51,458 - INFO - Loaded 2308 valid postcode districts
+2025-04-26 11:39:02,185 - ERROR - Error fetching listing 70033373: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:02,212 - ERROR - Error fetching listing 70026661: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:02,212 - ERROR - Error fetching listing 70026399: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:17,337 - ERROR - Error fetching listing 70026661: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:18,329 - ERROR - Error fetching listing 70026399: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:22,276 - ERROR - Error fetching listing 70033373: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:32,600 - ERROR - Error fetching listing 70026661: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:34,415 - ERROR - Error fetching listing 70026399: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:42,429 - ERROR - Error fetching listing 70033373: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:39:42,614 - ERROR - Failed to fetch listing 70026661 after 3 retries
+2025-04-26 11:39:43,425 - ERROR - Failed to fetch listing 70026399 after 3 retries
+2025-04-26 11:39:50,440 - ERROR - Failed to fetch listing 70033373 after 3 retries
+2025-04-26 11:40:00,531 - ERROR - Error fetching listing 70017757: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:00,560 - ERROR - Error fetching listing 70020164: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:00,560 - ERROR - Error fetching listing 70026059: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:00,560 - ERROR - Error fetching listing 67164324: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:00,586 - ERROR - Error fetching listing 70019709: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:16,694 - ERROR - Error fetching listing 70017757: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:16,709 - ERROR - Error fetching listing 67164324: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:17,686 - ERROR - Error fetching listing 70026059: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:20,689 - ERROR - Error fetching listing 70019709: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:32,898 - ERROR - Error fetching listing 67164324: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:33,762 - ERROR - Error fetching listing 70017757: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:33,824 - ERROR - Error fetching listing 70026059: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:35,787 - ERROR - Error fetching listing 70019709: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:39,770 - ERROR - Failed to fetch listing 70017757 after 3 retries
+2025-04-26 11:40:40,788 - ERROR - Failed to fetch listing 70019709 after 3 retries
+2025-04-26 11:40:40,910 - ERROR - Failed to fetch listing 67164324 after 3 retries
+2025-04-26 11:40:42,837 - ERROR - Failed to fetch listing 70026059 after 3 retries
+2025-04-26 11:40:52,928 - ERROR - Error fetching listing 70004404: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:52,973 - ERROR - Error fetching listing 70017219: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:40:52,989 - ERROR - Error fetching listing 70008515: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:09,100 - ERROR - Error fetching listing 70017219: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:11,072 - ERROR - Error fetching listing 70008515: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:13,006 - ERROR - Error fetching listing 70004404: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:26,189 - ERROR - Error fetching listing 70017219: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:29,095 - ERROR - Error fetching listing 70004404: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:30,178 - ERROR - Error fetching listing 70008515: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:36,197 - ERROR - Failed to fetch listing 70017219 after 3 retries
+2025-04-26 11:41:38,106 - ERROR - Failed to fetch listing 70004404 after 3 retries
+2025-04-26 11:41:39,181 - ERROR - Failed to fetch listing 70008515 after 3 retries
+2025-04-26 11:41:49,268 - ERROR - Error fetching listing 70002794: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:49,268 - ERROR - Error fetching listing 70001339: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:49,283 - ERROR - Error fetching listing 70003995: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:49,313 - ERROR - Error fetching listing 64263799: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:41:49,328 - ERROR - Error fetching listing 69999550: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:05,379 - ERROR - Error fetching listing 70003995: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:09,418 - ERROR - Error fetching listing 64263799: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:24,450 - ERROR - Error fetching listing 70003995: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:29,508 - ERROR - Error fetching listing 64263799: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:33,455 - ERROR - Failed to fetch listing 70003995 after 3 retries
+2025-04-26 11:42:34,515 - ERROR - Failed to fetch listing 64263799 after 3 retries
+2025-04-26 11:42:44,584 - ERROR - Error fetching listing 69996360: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:44,630 - ERROR - Error fetching listing 69998624: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:44,645 - ERROR - Error fetching listing 69989222: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:44,660 - ERROR - Error fetching listing 68530797: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:42:59,721 - ERROR - Error fetching listing 69998624: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:00,731 - ERROR - Error fetching listing 69989222: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:01,667 - ERROR - Error fetching listing 69996360: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:03,742 - ERROR - Error fetching listing 68530797: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:16,816 - ERROR - Error fetching listing 69989222: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:18,897 - ERROR - Error fetching listing 69998624: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:20,846 - ERROR - Error fetching listing 68530797: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:21,752 - ERROR - Error fetching listing 69996360: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:22,817 - ERROR - Failed to fetch listing 69989222 after 3 retries
+2025-04-26 11:43:24,908 - ERROR - Failed to fetch listing 69998624 after 3 retries
+2025-04-26 11:43:25,848 - ERROR - Failed to fetch listing 68530797 after 3 retries
+2025-04-26 11:43:30,764 - ERROR - Failed to fetch listing 69996360 after 3 retries
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70033373
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70026661
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70026399
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70026059
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70019709
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 67164324
+2025-04-26 11:43:30,764 - WARNING - No details found for listing 70017757
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 70017219
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 70008515
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 70004404
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 70003995
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 64263799
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 69998624
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 68530797
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 69996360
+2025-04-26 11:43:30,765 - WARNING - No details found for listing 69989222
+2025-04-26 11:43:43,239 - ERROR - Error fetching listing 65856640: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:43,254 - ERROR - Error fetching listing 69974989: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:43,254 - ERROR - Error fetching listing 69986873: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:43,254 - ERROR - Error fetching listing 69985418: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:43,321 - ERROR - Error fetching listing 69984502: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:58,416 - ERROR - Error fetching listing 69984502: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:43:59,357 - ERROR - Error fetching listing 69985418: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:00,314 - ERROR - Error fetching listing 65856640: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:03,337 - ERROR - Error fetching listing 69986873: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:15,521 - ERROR - Error fetching listing 69984502: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:17,441 - ERROR - Error fetching listing 69985418: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:18,398 - ERROR - Error fetching listing 65856640: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:18,413 - ERROR - Error fetching listing 69986873: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:23,534 - ERROR - Failed to fetch listing 69984502 after 3 retries
+2025-04-26 11:44:24,420 - ERROR - Failed to fetch listing 69986873 after 3 retries
+2025-04-26 11:44:25,401 - ERROR - Failed to fetch listing 65856640 after 3 retries
+2025-04-26 11:44:25,446 - ERROR - Failed to fetch listing 69985418 after 3 retries
+2025-04-26 11:44:35,629 - ERROR - Error fetching listing 66255423: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:35,629 - ERROR - Error fetching listing 66255407: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:35,629 - ERROR - Error fetching listing 69961151: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:35,675 - ERROR - Error fetching listing 69965735: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:50,740 - ERROR - Error fetching listing 69961151: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:53,769 - ERROR - Error fetching listing 66255423: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:44:53,769 - ERROR - Error fetching listing 69965735: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:06,867 - ERROR - Error fetching listing 69961151: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:09,887 - ERROR - Error fetching listing 69965735: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:10,899 - ERROR - Error fetching listing 66255423: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:13,877 - ERROR - Failed to fetch listing 69961151 after 3 retries
+2025-04-26 11:45:15,889 - ERROR - Failed to fetch listing 69965735 after 3 retries
+2025-04-26 11:45:19,902 - ERROR - Failed to fetch listing 66255423 after 3 retries
+2025-04-26 11:45:30,012 - ERROR - Error fetching listing 69945095: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:30,012 - ERROR - Error fetching listing 69946291: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:30,027 - ERROR - Error fetching listing 69944169: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:46,138 - ERROR - Error fetching listing 69946291: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:46,189 - ERROR - Error fetching listing 69945095: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:45:47,138 - ERROR - Error fetching listing 69944169: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:03,266 - ERROR - Error fetching listing 69944169: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:04,225 - ERROR - Error fetching listing 69946291: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:06,288 - ERROR - Error fetching listing 69945095: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:12,239 - ERROR - Failed to fetch listing 69946291 after 3 retries
+2025-04-26 11:46:13,273 - ERROR - Failed to fetch listing 69944169 after 3 retries
+2025-04-26 11:46:15,294 - ERROR - Failed to fetch listing 69945095 after 3 retries
+2025-04-26 11:46:25,386 - ERROR - Error fetching listing 69931061: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:25,401 - ERROR - Error fetching listing 69918834: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:25,416 - ERROR - Error fetching listing 69930399: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+2025-04-26 11:46:25,416 - ERROR - Error fetching listing 69930188: HTTPSConnectionPool(host='api-graphql-lambda.prod.zoopla.co.uk', port=443): Max retries exceeded with url: /graphql/ (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
