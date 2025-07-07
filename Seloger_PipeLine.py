@@ -1,4 +1,4 @@
-from include.zoopla_resources import (
+from include.Seloger_resources import (
                             Comparing_Data,
                             Data_Cleaning,
                             Analyse_Records,
@@ -12,12 +12,12 @@ from datetime import datetime, timedelta
 from airflow.providers.slack.operators.slack_webhook import SlackWebhookOperator
 
 doc = """
-## 📌 Zoopla Property Data Pipeline
-This DAG runs **weekly** to extract, clean, compare, and analyze property listings from Zoopla.  
+## 📌 Seloger Property Data Pipeline
+This DAG runs **weekly** to extract, clean, compare, and analyze property listings from Seloger.  
 Results are pushed to **Elasticsearch** and **Google Sheets** for reporting.
 
 ### 🔄 Pipeline Stages
-- **Extract & Clean**: Scrapes new listings, cleans them, and stores in MongoDB[Zoopla.Raw_Data].
+- **Extract & Clean**: Scrapes new listings, cleans them, and stores in MongoDB[Seloger.Raw_Data].
 - **Compare & Update**: Compares against existing data and updates Elasticsearch:
   - Adds new listings
   - Flags deleted ones
@@ -30,9 +30,9 @@ Results are pushed to **Elasticsearch** and **Google Sheets** for reporting.
 - Runs:  @weekly  (Every Sunday)
 
 ### 📦 Indices Used
--  prod_zoopla_stage_2_clean 
--  prod_zoopla_stage_3_properties_all 
--  prod_zoopla_stage_4_analysis 
+-  prod_Seloger_stage_2_clean 
+-  prod_Seloger_stage_3_properties_all 
+-  prod_Seloger_stage_4_analysis 
 
 ![Picture of the ISS](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMD17nUoqektiX0JwVGfM704YUL6EOIDkZSg&s)
 """
@@ -40,35 +40,35 @@ Results are pushed to **Elasticsearch** and **Google Sheets** for reporting.
 
 def get_path_json():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    download_page_folder_path = os.path.join(current_dir, "output","zoopla_listing_data.json")
+    download_page_folder_path = os.path.join(current_dir, "output","Seloger_listing_data.json")
     return download_page_folder_path
     
 def wrapper_add_new_records(**kwargs):
-    from include.zoopla_resources import Add_new_records # import separate for minimize import libraries time 
+    from include.Seloger_resources import Add_new_records # import separate for minimize import libraries time 
     ti = kwargs['ti']
     new_records = ti.xcom_pull(task_ids='Extract_Data_Cleaning_Validation.Compare_Data', key='new_records')
     Add_new_records.AddNewRecords(new_records).Main()
     
 def wrapper_update_delete_records(**kwargs):
-    from include.zoopla_resources import Update_Delete_Records # import separate for minimize import libraries time 
+    from include.Seloger_resources import Update_Delete_Records # import separate for minimize import libraries time 
     ti = kwargs['ti']
     delete_records = ti.xcom_pull(task_ids='Extract_Data_Cleaning_Validation.Compare_Data', key='delete_records')
     Update_Delete_Records.UpdateStatus(delete_records).Main()
     
 def wrapper_update_common_records(**kwargs):
-    from include.zoopla_resources import Update_Common_records # import separate for minimize import libraries time 
+    from include.Seloger_resources import Update_Common_records # import separate for minimize import libraries time 
     ti = kwargs['ti']
     common_records = ti.xcom_pull(task_ids='Extract_Data_Cleaning_Validation.Compare_Data', key='common_records')
     Update_Common_records.update_records(common_records).Main()
 
 def wrapper_Feed_es(**kwargs):
-    from include.zoopla_resources import Feed_Analytics_Statistics_ES # import separate for minimize import libraries time 
+    from include.Seloger_resources import Feed_Analytics_Statistics_ES # import separate for minimize import libraries time 
     ti = kwargs['ti']
     analysis_records = ti.xcom_pull(task_ids='Analyse_Data_Feeding_ES_GS.Analyse_Records', key='analysis_records')
     Feed_Analytics_Statistics_ES.Feeding(analysis_records).Main()
 
 def run_Feeding_GS(**kwargs):
-    from include.zoopla_resources import Feeding_google_sheet # import separate for minimize import libraries time 
+    from include.Seloger_resources import Feeding_google_sheet # import separate for minimize import libraries time 
     "Wrapper that starts Feeding Google Sheet."
     ti = kwargs['ti']
     analysis_records = ti.xcom_pull(task_ids='Analyse_Data_Feeding_ES_GS.Analyse_Records', key='analysis_records')
@@ -76,8 +76,8 @@ def run_Feeding_GS(**kwargs):
     
 
 
-def run_zoopla_spider(**_):
-    from include.zoopla_resources import zoopla_spider
+def run_Seloger_spider(**_):
+    from include.Seloger_resources import Seloger_spider
     
     """
     Wrapper that starts the Scrapy spider.
@@ -86,9 +86,9 @@ def run_zoopla_spider(**_):
     """
 
 
-    logging.warning("===> Zoopla spider is starting")
-    zoopla_spider.Main()                         # your real entry-point
-    logging.warning("===> Zoopla spider finished")
+    logging.warning("===> Seloger spider is starting")
+    Seloger_spider.Main()                         # your real entry-point
+    logging.warning("===> Seloger spider finished")
 
 
 def run_extract_skipped_districts(**_):
@@ -96,7 +96,7 @@ def run_extract_skipped_districts(**_):
     Extract_Skipped_Districts.Main()
 
 def run_delete_mongo(**_):
-    from include.zoopla_resources import Delete_Mongo
+    from include.Seloger_resources import Delete_Mongo
     
     """
     Wrapper that starts the Scrapy spider.
@@ -110,7 +110,7 @@ def run_delete_mongo(**_):
 
 
 
-with DAG('Zoopla_PipeLine',
+with DAG('Seloger_PipeLine',
         default_args={
             'depends_on_past': False,
             'start_date': datetime(2025, 6, 9),   
@@ -148,33 +148,33 @@ with DAG('Zoopla_PipeLine',
         '''
         
         #-------------------------------------------
-        # [1-3] Running the spider to scrape data from Zoopla and return the JSON file
+        # [1-3] Running the spider to scrape data from Seloger and return the JSON file
         #-------------------------------------------
-        run_spider = PythonOperator(task_id = 'Running_Zoopla_Spider',
-                                    python_callable = run_zoopla_spider)  # No parentheses! for the function becasue to prevent it from running immediately and wait for the scheduler to run it 
+        run_spider = PythonOperator(task_id = 'Running_Seloger_Spider',
+                                    python_callable = run_Seloger_spider)  # No parentheses! for the function becasue to prevent it from running immediately and wait for the scheduler to run it 
         
         run_spider.doc_md='''
-        Running Zoopla scraper and feeding data into [Raw_Data] Mongodb .
+        Running Seloger scraper and feeding data into [Raw_Data] Mongodb .
         '''
         
         #-------------------------------------------
-        # [1-4] Cleaning data from ES [prod_zoopla_stage_1_raw] and feeding : [prod_zoopla_stage_2_clean]
+        # [1-4] Cleaning data from ES [prod_Seloger_stage_1_raw] and feeding : [prod_Seloger_stage_2_clean]
         #-------------------------------------------
         clean_data = PythonOperator(task_id = 'Cleaning_Data_Validation',
                                     python_callable = Data_Cleaning.Main)  
         
         clean_data.doc_md = '''
-        Cleaning the data from MongoDB Collection [Raw_Data] To Elasticsearch [prod_zoopla_stage_2_clean].
+        Cleaning the data from MongoDB Collection [Raw_Data] To Elasticsearch [prod_Seloger_stage_2_clean].
         '''
 
         #-------------------------------------------
-        # [1-5] Compare the cleaned data with existing in index [prod_zoopla_stage_2_clean] with [prod_zoopla_stage_3_properities_all]
+        # [1-5] Compare the cleaned data with existing in index [prod_Seloger_stage_2_clean] with [prod_Seloger_stage_3_properities_all]
         #------------------------------------------- 
         compare_data = PythonOperator(task_id='Compare_Data',
                                     python_callable = Comparing_Data.Main)
         
         compare_data.doc_md = '''
-        Compare the cleaned data in [prod_zoopla_stage_2_clean] with the existing data in [prod_zoopla_stage_3_properties_all]  
+        Compare the cleaned data in [prod_Seloger_stage_2_clean] with the existing data in [prod_Seloger_stage_3_properties_all]  
         to identify and extract the following groups:  
         - **new_records**: appear in stage 2 but not in stage 3  
         - **deleted_records**: missing from the latest scrape  
@@ -222,13 +222,13 @@ with DAG('Zoopla_PipeLine',
         '''
         
         #-------------------------------------------
-        # [2-2] Feeding Analytics data to ES [prod_zoopla_stage_4_analysis]
+        # [2-2] Feeding Analytics data to ES [prod_Seloger_stage_4_analysis]
         #------------------------------------------ nOT fINISHED  
         feed_analytics_statistics_to_es = PythonOperator(task_id='Feed_Analytics_Statistics_ES',
                                             python_callable = wrapper_Feed_es) 
         
         feed_analytics_statistics_to_es.doc_md='''
-        Feeding analytics data to ES [prod_zoopla_stage_4_analysis]
+        Feeding analytics data to ES [prod_Seloger_stage_4_analysis]
         '''
 
         #-------------------------------------------
