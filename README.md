@@ -117,12 +117,6 @@ It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with re
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional: Add screenshots of your Airflow DAG or Google Sheet report)*
-
----
-
 ## 🤝 About the Author
 
 **👨‍💻 Ramez Rasmy**  
