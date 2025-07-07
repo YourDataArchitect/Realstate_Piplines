@@ -11,33 +11,6 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from airflow.providers.slack.operators.slack_webhook import SlackWebhookOperator
 
-doc = """
-## 📌 Seloger Property Data Pipeline
-This DAG runs **weekly** to extract, clean, compare, and analyze property listings from Seloger.  
-Results are pushed to **Elasticsearch** and **Google Sheets** for reporting.
-
-### 🔄 Pipeline Stages
-- **Extract & Clean**: Scrapes new listings, cleans them, and stores in MongoDB[Seloger.Raw_Data].
-- **Compare & Update**: Compares against existing data and updates Elasticsearch:
-  - Adds new listings
-  - Flags deleted ones
-  - Updates common records
-- **Analytics**: Generates statistics and feeds them to:
-  - stage_4_analysis  in Elasticsearch
-  - Google Sheets 
-
-### 📅 Schedule
-- Runs:  @weekly  (Every Sunday)
-
-### 📦 Indices Used
--  prod_Seloger_stage_2_clean 
--  prod_Seloger_stage_3_properties_all 
--  prod_Seloger_stage_4_analysis 
-
-![Picture of the ISS](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMD17nUoqektiX0JwVGfM704YUL6EOIDkZSg&s)
-"""
-
-
 def get_path_json():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     download_page_folder_path = os.path.join(current_dir, "output","Seloger_listing_data.json")
