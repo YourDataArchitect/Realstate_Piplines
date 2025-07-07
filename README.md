@@ -1,6 +1,6 @@
-# 🏡 Rightmove Property Data Pipeline (Airflow DAG)
+# 🏡 Seloger Property Data Pipeline (Airflow DAG)
 
-This repository contains a fully automated data pipeline built with **Apache Airflow** to extract, clean, analyze, and report real estate listings from **Rightmove**.  
+This repository contains a fully automated data pipeline built with **Apache Airflow** to extract, clean, analyze, and report real estate listings from **Seloger**.  
 It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with real-time Slack alerts for monitoring.
 
 ---
@@ -42,7 +42,7 @@ It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with re
                  └────────────┬───────────────┘
                               ↓
                  ┌────────────────────────────┐
-                 │  Running_Rightmove_Spider  │
+                 │  Running_Seloger_Spider    │
                  │  (Scrapy → JSON Output)    │
                  └────────────┬───────────────┘
                               ↓
@@ -86,31 +86,13 @@ It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with re
 
 ---
 
-## 🛠 Setup & Deployment
-
-> 🔒 **Note:** All credentials (Slack webhook, MongoDB, ES, Sheets API) are managed via Airflow **Connections/Variables**. No secrets are stored in this code.
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/zoopla-pipeline.git
-   ```
-
-2. Add environment connections in Airflow UI:
-   - `slack_webhook`
-   - `mongo_conn`
-   - `es_conn`
-   - `google_sheets_conn`
-
-3. Deploy the DAG to your Airflow environment (Astro, Local, or Cloud).
-
----
-
 ## 📊 Output
 
 - **Elasticsearch Indices**
-  - `stage_2_clean`
-  - `stage_3_properties_all`
-  - `stage_4_analysis`
+  - `stage_2_clean`: Contains data after cleaning and validation — *temporary index*
+  - `stage_3_properties_all`: Contains all processed records ready for analysis — *permanent index*
+  - `stage_4_analysis`: Contains analytical metrics for the French real estate market — *permanent index*
+
 
 - **Google Sheet Report**
   - Daily snapshot of analysis results
