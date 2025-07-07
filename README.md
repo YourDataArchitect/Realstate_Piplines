@@ -1,6 +1,6 @@
-# 🏡 Zoopla Property Data Pipeline (Airflow DAG)
+# 🏡 Rightmove Property Data Pipeline (Airflow DAG)
 
-This repository contains a fully automated data pipeline built with **Apache Airflow** to extract, clean, analyze, and report real estate listings from **Zoopla**.  
+This repository contains a fully automated data pipeline built with **Apache Airflow** to extract, clean, analyze, and report real estate listings from **Rightmove**.  
 It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with real-time Slack alerts for monitoring.
 
 ---
@@ -42,7 +42,7 @@ It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with re
                  └────────────┬───────────────┘
                               ↓
                  ┌────────────────────────────┐
-                 │  Running_Zoopla_Spider     │
+                 │  Running_Rightmove_Spider  │
                  │  (Scrapy → JSON Output)    │
                  └────────────┬───────────────┘
                               ↓
@@ -108,9 +108,9 @@ It pushes data to **MongoDB**, **Elasticsearch**, and **Google Sheets**, with re
 ## 📊 Output
 
 - **Elasticsearch Indices**
-  - `prod_zoopla_stage_2_clean`
-  - `prod_zoopla_stage_3_properties_all`
-  - `prod_zoopla_stage_4_analysis`
+  - `stage_2_clean`
+  - `stage_3_properties_all`
+  - `stage_4_analysis`
 
 - **Google Sheet Report**
   - Daily snapshot of analysis results
