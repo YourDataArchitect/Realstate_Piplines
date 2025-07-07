@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://logonews.fr/wp-content/uploads/2023/12/seloger_thumbnail_logonews.png" alt="SeLoger Logo" width="400"/>
+</p>
+
+
 # 🏡 Seloger Property Data Pipeline (Airflow DAG)
 
 This repository contains a fully automated data pipeline built with **Apache Airflow** to extract, clean, analyze, and report real estate listings from **Seloger**.  
